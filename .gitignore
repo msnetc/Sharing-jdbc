@@ -28,3 +28,4 @@ hs_err_pid*
 *.xml
 *.xml___jb_tmp___
 /target
+/.idea
