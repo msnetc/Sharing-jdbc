@@ -25,4 +25,14 @@ public class UserController {
         return userService.selectSelective(record);
     }
 
+    @RequestMapping("/selectSelectiveMaster")
+    public List<User> selectSelectiveMaster(User record) {
+        return userService.selectSelectiveMaster(record);
+    }
+
+    @RequestMapping("/insertSelective")
+    public int insertSelective(User record) {
+        return userService.insertSelective(record);
+    }
+
 }

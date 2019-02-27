@@ -13,7 +13,6 @@ import java.util.Collection;
  */
 @Slf4j
 public class HashPreciseShardingAlgorithm implements PreciseShardingAlgorithm<String> {
-
     @Override
     public String doSharding(Collection<String> allTableNames, PreciseShardingValue<String> preciseShardingValue) {
       log.debug("name hashCode取模 分表规则计算开始 . 请求参数 : {}" , preciseShardingValue.getValue());
@@ -26,4 +25,5 @@ public class HashPreciseShardingAlgorithm implements PreciseShardingAlgorithm<St
         }
         return null;
     }
+
 }
